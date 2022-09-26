@@ -17,10 +17,10 @@
     
         &__head {
             @extend .alien;
-            transform: rotate(15deg);
-/*             width:  10.5rem;
-            left: 15%;
-            top: -10%; */
+            /* transform: rotate(45deg); */
+            width:  10.5rem;
+            left: 2%;
+            top: 15%; 
             animation: fade-in-alien 700ms forwards ease-out;
         }
     
@@ -28,14 +28,14 @@
             @extend .alien;
             width: 10.5rem;
             z-index: 10;
-/*             top: -1rem;
-            right: 10%; */
+            top: -1rem;
+            right: 20%;
         }
     
         &__hand--left {
             @extend .alien; 
-/*             left: 30%;
-            bottom: -2.2rem; */
+            left: 30%;
+            bottom: -2.2rem; 
             width:  10.5rem;
             z-index: 10;
             
@@ -106,7 +106,7 @@
 
     .index {
 
-        .alien {
+/*         .alien {
         
             &__head {
                 width:  10.5rem;
@@ -124,7 +124,7 @@
                 left: 30%;
                 bottom: -6%;                
             }
-        }
+        } */
 
         .principal {
             flex-direction: column;
@@ -173,7 +173,7 @@
 
 @media only screen and (min-width: 768px) {
 
-    .alien {
+/*     .alien {
         
         &__head {
             left: 15% !important;
@@ -183,7 +183,7 @@
         &__hand--right {
             right: 10% !important;
         }
-    }
+    } */
 
     .principal {
         padding: 0 3rem 5rem;
@@ -250,7 +250,7 @@
 
 @media only screen and (min-width: 2100px) {
 
-    .alien {
+/*     .alien {
         
         &__head {
             left: 20% !important;
@@ -264,7 +264,7 @@
         &__hand--left {
             bottom: 0.5% !important;                
         }
-    }
+    } */
 
 
 
@@ -299,8 +299,8 @@
 }
 @keyframes fade-in-alien {
     0% {
-      top: 10%;
-      transform: rotate(5deg);
+      left: 10%;
+      /* transform: rotate(5deg); */
     }
     100% {
     }

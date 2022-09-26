@@ -518,19 +518,19 @@ footer {
     stroke-miterlimit: 10;
     position: absolute; }
     .index .alien__head {
-      transform: rotate(15deg);
-      /*             width:  10.5rem;
-            left: 15%;
-            top: -10%; */
+      /* transform: rotate(45deg); */
+      width: 10.5rem;
+      left: 2%;
+      top: 15%;
       animation: fade-in-alien 700ms forwards ease-out; }
     .index .alien__hand--right {
       width: 10.5rem;
       z-index: 10;
-      /*             top: -1rem;
-            right: 10%; */ }
+      top: -1rem;
+      right: 20%; }
     .index .alien__hand--left {
-      /*             left: 30%;
-            bottom: -2.2rem; */
+      left: 30%;
+      bottom: -2.2rem;
       width: 10.5rem;
       z-index: 10; }
   .index .principal {
@@ -568,50 +568,65 @@ footer {
         color: #5c499e; }
 
 @media only screen and (min-width: 0px) {
-  .index .alien__head {
-    width: 10.5rem;
-    left: 5%;
-    top: -3%;
-    animation: fade-in-alien 700ms forwards ease-out; }
-  .index .alien__hand--right {
-    top: 6%;
-    right: -15%; }
-  .index .alien__hand--left {
-    left: 30%;
-    bottom: -6%; }
-  .index .principal {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    filter: drop-shadow(1.25rem 1.25rem #161616); }
-    .index .principal .foto-gonza {
-      width: 80%;
-      margin-bottom: 2rem; }
-    .index .principal-textos {
-      text-align: center; }
-      .index .principal-textos p {
-        font-size: 2.2rem;
-        margin-bottom: 1.6rem; }
-        .index .principal-textos p .gonza-text {
-          font-family: "Fredoka One", cursive;
-          font-size: 2.5rem;
-          color: #ffffff;
-          font-weight: 400;
-          -webkit-text-stroke: 2px #5c499e; }
-        .index .principal-textos p .creative {
-          font-size: 2rem;
-          color: #ffffff;
-          background-color: #5c499e; }
-      .index .principal-textos .text {
-        font-size: 1.3rem; } }
+  .index {
+    /*         .alien {
+        
+            &__head {
+                width:  10.5rem;
+                left: 5%;
+                top: -3%;
+                animation: fade-in-alien 700ms forwards ease-out;
+            }
+
+            &__hand--right {
+                top: 6%;
+                right: -15%;
+            }
+
+            &__hand--left {
+                left: 30%;
+                bottom: -6%;                
+            }
+        } */ }
+    .index .principal {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      filter: drop-shadow(1.25rem 1.25rem #161616); }
+      .index .principal .foto-gonza {
+        width: 80%;
+        margin-bottom: 2rem; }
+      .index .principal-textos {
+        text-align: center; }
+        .index .principal-textos p {
+          font-size: 2.2rem;
+          margin-bottom: 1.6rem; }
+          .index .principal-textos p .gonza-text {
+            font-family: "Fredoka One", cursive;
+            font-size: 2.5rem;
+            color: #ffffff;
+            font-weight: 400;
+            -webkit-text-stroke: 2px #5c499e; }
+          .index .principal-textos p .creative {
+            font-size: 2rem;
+            color: #ffffff;
+            background-color: #5c499e; }
+        .index .principal-textos .text {
+          font-size: 1.3rem; } }
 
 @media only screen and (min-width: 768px) {
-  .alien__head {
-    left: 15% !important;
-    top: 2% !important; }
-  .alien__hand--right {
-    right: 10% !important; }
+  /*     .alien {
+        
+        &__head {
+            left: 15% !important;
+            top: 2% !important;    
+        }
+
+        &__hand--right {
+            right: 10% !important;
+        }
+    } */
   .principal {
     padding: 0 3rem 5rem;
     margin-top: 2.5rem; } }
@@ -650,13 +665,21 @@ footer {
         font-size: 1.8rem; } }
 
 @media only screen and (min-width: 2100px) {
-  .alien__head {
-    left: 20% !important;
-    top: 3% !important; }
-  .alien__hand--right {
-    top: 7.5% !important; }
-  .alien__hand--left {
-    bottom: 0.5% !important; }
+  /*     .alien {
+        
+        &__head {
+            left: 20% !important;
+            top: 3% !important;    
+        }
+
+        &__hand--right {
+            top: 7.5% !important;
+        }
+
+        &__hand--left {
+            bottom: 0.5% !important;                
+        }
+    } */
   .principal {
     padding: 0; } }
 
@@ -675,8 +698,8 @@ footer {
 
 @keyframes fade-in-alien {
   0% {
-    top: 10%;
-    transform: rotate(5deg); }
+    left: 10%;
+    /* transform: rotate(5deg); */ }
   100% { } }
 
 @keyframes rotate-alien {
