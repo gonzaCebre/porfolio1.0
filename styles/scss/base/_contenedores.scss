@@ -1,0 +1,61 @@
+
+%contenedor {
+    /* width: 75%; */
+    margin: 2.5rem 0;
+    padding: 2rem;
+    border: .25rem solid $dark;
+    display: flex;
+    flex-direction: column;
+
+} 
+
+.contenedor-derecha {
+    @extend %contenedor;
+    border-radius: 1.6rem 0 0 1.6rem;  
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-izquierda {
+    @extend %contenedor;
+    border-radius: 0 1.6rem 1.6rem 0;   
+    justify-content: center;
+    align-items: flex-start; 
+    margin-left: 1rem;
+}
+
+.contenedor-completo {
+    @extend %contenedor;
+    justify-content: center;
+    align-items: flex-start; 
+    /* margin-left: 1rem; */
+    border: none;
+    filter: drop-shadow(0 1.25rem $dark);  
+}
+
+.contenedor-centro {
+    @extend %contenedor;
+    border-radius: 1.6rem;   
+    justify-content: center;
+    align-items: center; 
+    filter: drop-shadow(1.25rem 1.25rem $dark);  
+}
+
+@mixin blob($color, $height, $stroke-width) {
+    height: $height;
+    fill: $color;
+    z-index: 3;
+    stroke: $white;
+    stroke-width: $stroke-width;
+}
+
+@media (max-width: 800px) {
+    .contenedor-derecha {
+        width: 85%;
+        align-items: flex-start;
+    }
+
+    .contenedor-izquierda {
+        width: 65%;
+    }
+}

@@ -1,0 +1,78 @@
+
+section {
+    display: flex;
+    /* position: relative; */
+    overflow-x: hidden;    
+}
+
+@keyframes floating-section {
+    0% {
+        transform: translateY(0);
+        
+    }
+    25% {
+        transform: translateY(4px);
+        
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(4px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+.logos {
+    fill: $dark;
+    margin-right: 5%;
+    margin-bottom: 5%;
+
+    &:hover {
+        fill: $violet;
+    }
+}
+
+//Media para cel
+@media (max-width: 767px)  {
+    .logos {
+        height: 2rem;
+    }
+}
+
+//Media para tablets y notebooks
+@media (min-width: 768px) and (max-width: 1023px) {
+    .logos {
+        height: 3rem;
+    }
+}
+
+//Media para compu
+@media (min-width: 1024px) {
+    .logos {
+        height: 4rem;
+    }
+}
+
+.mostrar {
+    display: block;
+}
+
+.noMostrar {
+    display:  none !important ;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+
+.foto-mia {
+    height: 100%;
+}
+
+
+

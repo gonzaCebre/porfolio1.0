@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss styles/scss/style.scss styles/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\" "
+  },
+  "keywords": [],
+  "author": "Gonzalo Cebrero",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.18"
+  }
+}

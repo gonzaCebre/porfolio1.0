@@ -1,0 +1,85 @@
+
+.quien-soy {
+    align-items: center;
+    justify-content: flex-start;
+    
+
+    .blob02 {
+        @include blob($lightBlue, 35%, 0.5rem);
+        right: 5%;
+    }
+
+    &-contenedor {
+        height: 33rem;
+        background-color: $pink;
+
+        input[type=checkbox] {
+            display: none;
+            pointer-events: none;
+
+            & + label {
+                display: flex;
+                cursor: pointer;
+                svg {
+                    width: 1.125rem;
+
+                    stroke-width: 1rem;
+                    fill: white;
+
+                    .box {
+                        stroke-dasharray: 600;
+                        stroke-dashoffset: 0;
+                        stroke: $violet;
+                    }
+
+                    .check {
+                        stroke-dasharray: 100;
+                        stroke-dashoffset: 100;
+                        stroke: $green;
+                    }
+                }
+            }
+
+            &:checked + label {
+                .box {
+                    stroke-dashoffset: 600;
+                    transition: stroke-dashoffset .3s linear;
+                }
+                .check {
+                    stroke-dashoffset: 0;
+                    transition: stroke-dashoffset .3s linear;
+                }
+            }
+        }
+
+        .reverse {
+            .box {
+                stroke-dashoffset: 0;
+                transition: stroke-dashoffset .3s linear;
+            }
+            .check {
+                stroke-dashoffset: 70;
+                transition: stroke-dashoffset .3s linear;
+            }
+        }
+
+
+    
+
+/*         &-textos {
+            display: flex;
+            flex-direction: column;
+            align-content: flex-start;
+            text-align: left;
+            margin-left: 10%;
+
+            .title-dev {
+                font-size: 2.1875rem;
+                font-family: $fredoka;
+                color: $dark;
+            }
+        } */
+
+
+    }
+}

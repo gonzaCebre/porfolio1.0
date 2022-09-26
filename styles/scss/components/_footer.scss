@@ -1,0 +1,197 @@
+footer {
+    width: 100vw;
+    background-color: $green;
+    padding: 3.125rem;
+    padding-bottom: 1rem;
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .triangle--left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0; 
+        height: 0; 
+        border-left: calc((105vw - 25rem)/2) solid $white;
+        border-bottom: 40vh solid transparent; 
+    }
+
+    .triangle--right {
+        @extend .triangle--left;
+        border-right: calc((105vw - 25rem)/2) solid $white;
+        border-left: none;
+        right: 0;
+        left: auto;
+    }
+
+    .footer__ovni {
+        fill: $dark;
+        width: 25rem;
+        position: absolute;
+        top: -20%;
+        transform: rotate(2deg);
+        transition: all ease-in-out;
+        animation: floating 2s ease-in-out infinite;
+        animation-delay: 0ms;
+    }
+
+
+
+    .footer-texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+
+        p {
+            @include text($fredoka, 1.25rem, $violet);
+            margin-top: .5rem;
+        }
+
+        h2 {
+            font-size: 1.7rem;
+        }
+    }
+
+    .contacto {
+        text-align: center;
+        margin-bottom: 1rem;
+
+        p {
+            @include text($gantari, 1.25rem, $dark);
+            font-weight: 600;
+        }
+
+        .redes {
+            display: flex;
+            justify-content: center;
+
+            svg {
+                fill: $violet;
+
+                &:hover {
+                    cursor: pointer;
+                    fill: $dark;
+                }
+            }
+        }
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        p {
+            @include text($gantari, 1.25rem, $dark);
+            font-weight: 600;
+        }
+
+        form {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            input {
+                width: 45%;
+                margin-top: 1rem;
+                margin-bottom: 0.5rem;
+                padding: .375rem;
+                padding-left: 1rem;
+                border: none;
+                border-radius: 1rem;
+                background-color: $white;
+                font-size: 0.6rem;
+
+
+                &::placeholder {
+                    @include text($gantari, 1rem, $violet);
+                }
+            }
+
+
+            textarea {
+                @extend input;
+                width: 100%;
+                padding-top: 1rem;
+                
+            }
+
+            .ovni-container {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                .ovni-submit {
+                    margin-top: -4rem;
+                    fill: $dark;
+                    width: 3.125rem;
+                    transform: rotate(2deg);
+                    animation: floating 2s ease-in-out infinite;
+                }
+            }
+
+
+
+            .submit {
+                width: 30%;
+                padding: 0.2rem;
+                margin: 0 auto;
+                background-color: $violet;
+                border: none;
+                border-radius: 1rem;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                @include text($fredoka, 0.8rem, $dark);
+                
+
+                @keyframes pulse {
+                    50% {
+                        transform: scaleX(1.1) scaleY(1.1);
+                    }
+                    
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    color: $dark;
+                }
+            }
+        }
+    }
+    p {
+        text-align: center;
+    }
+
+}
+
+
+@keyframes floating {
+    0% {
+        transform: translateY(0) rotate(2deg);
+        
+    }
+    25% {
+        transform: translateY(4px) rotate(2deg);
+        
+    }
+    50% {
+        transform: translateY(0) rotate(2deg);
+    }
+    75% {
+        transform: translateY(4px) rotate(2deg);
+    }
+    100% {
+        transform: translateY(0px) rotate(2deg);
+    }
+}

@@ -1,0 +1,321 @@
+    
+.index {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 90vh;
+    /* overflow: visible; */
+
+    .alien {
+        fill: $green;
+        stroke: $dark; 
+        stroke-width:1.1rem;
+        stroke-miterlimit:10;
+        position: absolute;
+        
+    
+        &__head {
+            @extend .alien;
+            transform: rotate(15deg);
+/*             width:  10.5rem;
+            left: 15%;
+            top: -10%; */
+            animation: fade-in-alien 700ms forwards ease-out;
+        }
+    
+        &__hand--right {
+            @extend .alien;
+            width: 10.5rem;
+            z-index: 10;
+/*             top: -1rem;
+            right: 10%; */
+        }
+    
+        &__hand--left {
+            @extend .alien; 
+/*             left: 30%;
+            bottom: -2.2rem; */
+            width:  10.5rem;
+            z-index: 10;
+            
+        }
+    
+    }
+    
+    .principal {
+        width: 75%;
+        height: 80%;
+        background-color: $green;
+        margin: 2.5rem 0 2.5rem -1.5rem;
+        position: absolute;
+        border: .25rem solid $dark;
+        display: flex;
+        filter: drop-shadow(1.25rem 1.25rem $dark);  
+        border-radius: 1.6rem;  
+    
+
+        &-textos {
+            display: flex;
+            flex-direction: column;
+
+
+
+
+
+            p {
+                    font-family: $fredoka;
+                    color: $dark;     
+
+                    &:first-child {
+                        font-size: 2rem;
+                        color: $violet;
+
+                    }
+            }
+
+            .creative {
+                    color: $white;             
+                    cursor: default;
+                    transition: all 0.3s ease-out;
+                    padding: 0 0.5rem;
+                    border-radius: 5px;
+
+
+                    &:hover {
+                        color: $white;
+                        background-color: transparent;
+                        -webkit-text-stroke: 1.5px $violet;
+                        padding: 0;
+                    }
+            }
+            
+
+            .text {
+                font-family: $gantari;
+                color: $violet;
+            }
+        }
+
+
+    }
+}
+
+
+@media only screen and (min-width: 0px) {
+
+    .index {
+
+        .alien {
+        
+            &__head {
+                width:  10.5rem;
+                left: 5%;
+                top: -3%;
+                animation: fade-in-alien 700ms forwards ease-out;
+            }
+
+            &__hand--right {
+                top: 6%;
+                right: -15%;
+            }
+
+            &__hand--left {
+                left: 30%;
+                bottom: -6%;                
+            }
+        }
+
+        .principal {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            filter: drop-shadow(1.25rem 1.25rem $dark);  
+
+
+            .foto-gonza {
+                width: 80%;
+                margin-bottom: 2rem;
+            }
+
+            &-textos {
+
+
+                text-align: center;
+
+
+
+                p {
+                    font-size: 2.2rem;
+                    margin-bottom: 1.6rem;
+
+                    .gonza-text{
+                        @include text($fredoka, 2.5rem, $white);
+                        -webkit-text-stroke: 2px $violet;
+                        
+                    }
+
+                    .creative {
+                        font-size: 2rem;    
+                        color: $white;
+                        background-color: $violet;    
+                    }
+                }                
+    
+                .text {
+                    font-size: 1.3rem
+                }
+            }            
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .alien {
+        
+        &__head {
+            left: 15% !important;
+            top: 2% !important;    
+        }
+
+        &__hand--right {
+            right: 10% !important;
+        }
+    }
+
+    .principal {
+        padding: 0 3rem 5rem;
+        margin-top: 2.5rem;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .index {
+        
+        .principal {
+            margin-top: 2.5rem;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0 2rem;
+
+            .foto-gonza {
+                height: 40%;
+                width: auto;
+            }
+
+            &-textos {
+                
+                align-content: flex-start;
+                text-align: left;
+                margin-left: 3rem;
+
+                    p {
+                        font-size: 3.5rem;
+                        margin-bottom: 1rem;
+
+                        .gonza-text{
+                            font-size: 3.5rem;
+                            color: $white;
+                            -webkit-text-stroke: 1.5px $violet;
+            
+                            &:hover {
+                                color: $violet;
+                                font-size: 3.7rem;
+                                margin-right: 0.2rem;
+                                border-radius: 5px;
+                                cursor: default;
+                                transition: all 0.3s ease-out;
+                            }    
+                        }
+
+                        .creative {
+                            font-size: 3.5rem;    
+                        }
+                    }
+                                
+                    .text {
+                        font-size: 1.8rem;
+                    }
+    
+                        
+
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 2100px) {
+
+    .alien {
+        
+        &__head {
+            left: 20% !important;
+            top: 3% !important;    
+        }
+
+        &__hand--right {
+            top: 7.5% !important;
+        }
+
+        &__hand--left {
+            bottom: 0.5% !important;                
+        }
+    }
+
+
+
+    .principal {
+        padding: 0 ;
+
+    }
+}
+
+
+
+
+
+
+.floating {
+    animation: floating-section 2s ease-in-out infinite;
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      /* height: 119%; */
+    }
+    50% {
+      opacity: 0.7;
+    
+    }
+    100% {
+      opacity: 1;
+      /* height: 120%; */
+    }
+}
+@keyframes fade-in-alien {
+    0% {
+      top: 10%;
+      transform: rotate(5deg);
+    }
+    100% {
+    }
+}
+@keyframes rotate-alien {
+    0% {
+      transform: rotate(-1deg);
+    }
+    25% {
+        transform: rotate(1deg);
+    }
+    75% {
+      transform: rotate(-1deg);
+    }
+    100% {
+        transform: rotate(1deg);
+    }
+}

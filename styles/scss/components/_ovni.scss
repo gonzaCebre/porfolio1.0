@@ -1,0 +1,62 @@
+
+.ovni {
+    fill: $dark;
+    width: 3.125rem;
+
+    position: fixed;
+    z-index: 4;
+    bottom: 50vh;
+    right: 4vw;
+
+    &:hover {
+        cursor: pointer;
+        animation: shake 350ms ease;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .ovni {
+        display: none;
+    }
+}
+
+
+@keyframes shake {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(0deg);
+        transform: translate(-80vw, -20vh);
+        
+    }
+    75% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes float {
+    0% {
+      transform: translateY(-4vh);
+    }
+    50% {
+        transform: translateY(4vh);
+        
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes toSubmit {
+    100% {
+        transform: translateY(35vh) translateX(-42vw);
+    }
+}
+

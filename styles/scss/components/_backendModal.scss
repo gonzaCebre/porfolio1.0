@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+/* .logo-backend {
+    font-family: 'Roboto Mono', monospace;
+    color: $white;
+    background-color: $dark;
+    float: right;
+
+    &:hover {
+        color: transparent;
+        -webkit-text-stroke: 1.5px $green;
+        cursor: pointer;
+    }
+} */
+
+.pantalla--backend {
+    width: 95%;
+    height: 90%;
+    background-color: $dark;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding: 1.2rem;
+
+    
+    .down-arrow-white-backend {
+        color: $white;
+        position: absolute;
+        bottom: 3rem;
+        right: 2rem;
+    }
+
+    h2 {
+        margin: 1.6rem 0rem;
+        font-size: 1.5rem;
+        color: $green;
+
+        span {
+            font-size: 1.5rem;
+            color: $white;
+        }
+    }
+
+    &  p {
+        color: $green;
+    }
+
+    .backend__project {
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+            display: flex;
+            align-items: center;
+
+            .title-text-container {
+                display: flex;
+
+                .title-text {
+                    color: $white;
+                }
+            }
+
+            p {
+                margin-left: 0.3rem;
+            }
+
+            .backend-arrow {
+                color: $white;
+            }
+        }
+        &__description__container {
+            margin-left: 2.5rem;
+            
+/*             .backend__project__description {
+                display: flex;
+            } */
+        }
+    }
+}

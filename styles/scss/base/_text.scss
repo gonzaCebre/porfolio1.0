@@ -1,0 +1,94 @@
+@mixin text ($font-family, $font-size, $color ) {
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $color;
+    font-weight: 400;
+}
+
+h1 {
+    @include text($fredoka, 3.5rem, $dark);
+}
+
+h2 {
+    @include text($fredoka, 2.5rem, $dark);
+}
+
+h3 {
+    @include text($fredoka, 1.65rem, $dark);
+
+}
+
+p {
+    @include text($gantari, 1.125rem, $dark)
+}
+
+.text-white {
+    color: $white;
+} 
+
+.text-dark {
+    color: $dark;
+}
+
+.transparent {
+    color: transparent !important;
+    -webkit-text-stroke: 1.5px $dark;
+}
+
+.backend-text {
+    color: $white;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+}
+
+
+
+.flex {
+    display: flex;
+}
+
+.white {
+    color: $white !important;
+}
+
+.green {
+    color: $green !important;
+}
+
+@media (max-width: 800px) {
+    h1 {
+        @include text($fredoka, 2.5rem, $dark);
+    }
+    
+    h2 {
+        @include text($fredoka, 2rem, $dark);
+    }
+    
+    h3 {
+        @include text($fredoka, 1.4rem, $dark);
+    
+    }
+    
+    p {
+        @include text($gantari, 1.125rem, $dark)
+    }
+}
+
+@media (min-width: 801px) {
+    h1 {
+        @include text($fredoka, 2.5rem, $dark);
+    }
+    
+    h2 {
+        @include text($fredoka, 2.5rem, $dark);
+    }
+    
+    h3 {
+        @include text($fredoka, 2rem, $dark);
+    
+    }
+    
+    p {
+        @include text($gantari, 1.5rem, $dark)
+    }
+}
