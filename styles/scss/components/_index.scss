@@ -59,19 +59,9 @@
             display: flex;
             flex-direction: column;
 
-
-
-
-
             p {
                     font-family: $fredoka;
                     color: $dark;     
-
-                    &:first-child {
-                        font-size: 2rem;
-                        color: $violet;
-
-                    }
             }
 
             .creative {
@@ -80,14 +70,6 @@
                     transition: all 0.3s ease-out;
                     padding: 0 0.5rem;
                     border-radius: 5px;
-
-
-                    &:hover {
-                        color: $white;
-                        background-color: transparent;
-                        -webkit-text-stroke: 1.5px $violet;
-                        padding: 0;
-                    }
             }
             
 
@@ -101,37 +83,17 @@
     }
 }
 
+//      CELULAR
 
 @media only screen and (min-width: 0px) {
 
     .index {
-
-/*         .alien {
-        
-            &__head {
-                width:  10.5rem;
-                left: 5%;
-                top: -3%;
-                animation: fade-in-alien 700ms forwards ease-out;
-            }
-
-            &__hand--right {
-                top: 6%;
-                right: -15%;
-            }
-
-            &__hand--left {
-                left: 30%;
-                bottom: -6%;                
-            }
-        } */
 
         .principal {
             flex-direction: column;
             justify-content: center;
             align-items: center;
             padding: 2rem;
-            filter: drop-shadow(1.25rem 1.25rem $dark);  
 
 
             .foto-gonza {
@@ -150,16 +112,22 @@
                     font-size: 2.2rem;
                     margin-bottom: 1.6rem;
 
+                    &:first-child {
+                        font-size: 1.8rem;
+                        color: $violet;
+                    }
+
                     .gonza-text{
-                        @include text($fredoka, 2.5rem, $white);
-                        -webkit-text-stroke: 2px $violet;
+                        @include text($fredoka, 2.3rem, $white);
+                        -webkit-text-stroke: 1px $violet;
                         
                     }
 
                     .creative {
                         font-size: 2rem;    
                         color: $white;
-                        background-color: $violet;    
+                        background-color: $violet; 
+                        
                     }
                 }                
     
@@ -171,26 +139,9 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
 
-/*     .alien {
-        
-        &__head {
-            left: 15% !important;
-            top: 2% !important;    
-        }
 
-        &__hand--right {
-            right: 10% !important;
-        }
-    } */
-
-    .principal {
-        padding: 0 3rem 5rem;
-        margin-top: 2.5rem;
-    }
-}
-
+//      COMPU
 
 @media only screen and (min-width: 992px) {
     .index {
@@ -203,7 +154,7 @@
             padding: 0 2rem;
 
             .foto-gonza {
-                height: 40%;
+                height: 60%;
                 width: auto;
             }
 
@@ -217,14 +168,19 @@
                         font-size: 3.5rem;
                         margin-bottom: 1rem;
 
+                        &:first-child {
+                            font-size: 2rem;
+                        }
+
                         .gonza-text{
-                            font-size: 3.5rem;
-                            color: $white;
-                            -webkit-text-stroke: 1.5px $violet;
+                            font-size: 2.2rem;
+                            color: $dark;
+                            -webkit-text-stroke: 0px;
             
                             &:hover {
-                                color: $violet;
-                                font-size: 3.7rem;
+                                color: $white;
+                                -webkit-text-stroke: 1.5px $violet;
+                                font-size: 2.5rem;
                                 margin-right: 0.2rem;
                                 border-radius: 5px;
                                 cursor: default;
@@ -233,50 +189,30 @@
                         }
 
                         .creative {
-                            font-size: 3.5rem;    
+                            font-size: 3.5rem; 
+                            
+                            &:hover {
+                                color: $white;
+                                background-color: transparent;
+                                -webkit-text-stroke: 1.5px $violet;
+                                padding: 0;
+                            }
                         }
                     }
                                 
                     .text {
-                        font-size: 1.8rem;
-                    }
-    
+                        font-size: 1.5rem;
+                    }    
                         
-
             }
         }
     }
 }
 
-@media only screen and (min-width: 2100px) {
-
-/*     .alien {
-        
-        &__head {
-            left: 20% !important;
-            top: 3% !important;    
-        }
-
-        &__hand--right {
-            top: 7.5% !important;
-        }
-
-        &__hand--left {
-            bottom: 0.5% !important;                
-        }
-    } */
 
 
 
-    .principal {
-        padding: 0 ;
-
-    }
-}
-
-
-
-
+//  ANIMACIONES
 
 
 .floating {
@@ -286,7 +222,6 @@
 @keyframes fade-in {
     0% {
       opacity: 0;
-      /* height: 119%; */
     }
     50% {
       opacity: 0.7;
@@ -294,7 +229,6 @@
     }
     100% {
       opacity: 1;
-      /* height: 120%; */
     }
 }
 @keyframes fade-in-alien {

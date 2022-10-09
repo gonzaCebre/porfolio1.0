@@ -32,7 +32,7 @@ footer {
         fill: $dark;
         width: 25rem;
         position: absolute;
-        top: -20%;
+        top: -16.5%;
         transform: rotate(2deg);
         transition: all ease-in-out;
         animation: floating 2s ease-in-out infinite;
@@ -48,15 +48,6 @@ footer {
         text-align: center;
         margin-bottom: 1rem;
         margin-top: 3rem;
-
-        p {
-            @include text($fredoka, 1.25rem, $violet);
-            margin-top: .5rem;
-        }
-
-        h2 {
-            font-size: 1.7rem;
-        }
     }
 
     .contacto {
@@ -72,8 +63,9 @@ footer {
             display: flex;
             justify-content: center;
 
-            svg {
+            .logos-redes {
                 fill: $violet;
+                
 
                 &:hover {
                     cursor: pointer;
@@ -104,13 +96,12 @@ footer {
             input {
                 width: 45%;
                 margin-top: 1rem;
-                margin-bottom: 0.5rem;
                 padding: .375rem;
                 padding-left: 1rem;
                 border: none;
                 border-radius: 1rem;
                 background-color: $white;
-                font-size: 0.6rem;
+                font-size: 1rem;
 
 
                 &::placeholder {
@@ -133,7 +124,7 @@ footer {
 
                 .ovni-submit {
                     margin-top: -4rem;
-                    fill: $dark;
+                    fill: $violet;
                     width: 3.125rem;
                     transform: rotate(2deg);
                     animation: floating 2s ease-in-out infinite;
@@ -144,8 +135,10 @@ footer {
 
             .submit {
                 width: 30%;
+                height: 2rem;
                 padding: 0.2rem;
                 margin: 0 auto;
+                margin-top: 1rem;
                 background-color: $violet;
                 border: none;
                 border-radius: 1rem;
@@ -153,7 +146,12 @@ footer {
                 display: flex;
                 justify-content: center;
                 @include text($fredoka, 0.8rem, $dark);
-                
+                text-transform: uppercase;
+
+                &:hover {
+                    cursor: pointer;
+                    color: $dark;
+                }
 
                 @keyframes pulse {
                     50% {
@@ -162,10 +160,7 @@ footer {
                     
                 }
 
-                &:hover {
-                    cursor: pointer;
-                    color: $dark;
-                }
+
             }
         }
     }
@@ -174,6 +169,70 @@ footer {
     }
 
 }
+
+//      CELULAR
+
+@media only screen and (min-width: 0px) {
+    .footer-texto {
+        .footer-title {
+            font-size: 1.7rem;
+        }
+
+        p {
+            @include text($fredoka, 1.25rem, $violet);
+            margin-top: .5rem;
+        }
+    }
+
+    .contacto{
+        .redes{
+            .logos-redes{
+                height: 3rem;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+
+
+}
+
+
+//      COMPU
+
+@media only screen and (min-width: 992px) {
+
+    footer{
+        .footer-texto {
+            .footer-title {
+                font-size: 2.7rem;
+            }
+    
+            p {
+                @include text($fredoka, 1.8rem, $violet);
+            }
+        }
+    
+        .contacto{
+            .redes{
+                .logos-redes{
+                    height: 3.6rem;
+                }
+            }
+        }
+
+        p{
+            font-size: 1rem;
+
+            b{
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+}
+
+
+//  ANIMACIONES
 
 
 @keyframes floating {
