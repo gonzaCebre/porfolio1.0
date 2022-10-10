@@ -3,6 +3,9 @@
 import gonzaTextAnimate from './js/index/gonzaTextAnimate.js'
 gonzaTextAnimate();
 
+import alienWarning from './js/index/alienWarning.js'
+alienWarning();
+
 import blobChange from './js/queHago/queHago.js';
 blobChange();
 

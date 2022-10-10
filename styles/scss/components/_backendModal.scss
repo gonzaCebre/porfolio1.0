@@ -9,6 +9,7 @@
     flex-direction: column;
     overflow-y: scroll;
     padding: 1.2rem;
+    filter: blur(4px);
 
     
     .down-arrow-white-backend {
@@ -64,4 +65,14 @@
             
         }
     }
+}
+
+.en-proceso{
+    background-color: $green;
+    @include text($fredoka, 1rem, $violet);
+    text-align: center;
+    position: fixed;
+    top: 40vh;
+    width: 60%;
+    padding: 2rem;
 }

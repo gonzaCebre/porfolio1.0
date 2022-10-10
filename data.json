@@ -1,137 +1,29 @@
 [
     {
       "id": 1,
-      "title": "Adopta un Firulais",
-      "description": "Proyecto creado para blablablablablablalbalblabalbalbalbalbal",
-      "imgDesktop": "./media/img/fotos/gonza.jpg",
-      "imgMobile": "123",
-      "githubUrl": "github.com",
-      "projectUrl": "https://www.adopta.com"
+      "title": "GHR Abogados",
+      "description": "Proyecto creado para presentación de servicios y medio de contacto con estudio jurídico situado en Bs. As., Argentina.",
+      "imgDesktop": "./media/img/proyectos/ghrAbogados/ghrAbogados-desktop.png",
+      "imgMobile": "./media/img/proyectos/ghrAbogados/ghrAbogados-mobile.png",
+      "githubUrl": "https://github.com/gonzaCebre/ghr",
+      "projectUrl": "https://ghrabogados.com.ar/"
     },
     {
       "id": 2,
-      "title": "GHR",
-      "description": "2° Proyecto creado para blablablablablablalbalblabalbalbalbalbal",
-      "imgDesktop": "./media/img/fotos/gonza.jpg",
-      "imgMobile": "456",
-      "githubUrl": "github.com",
-      "projectUrl": "ghr.com"
+      "title": "Adopta un Firulais",
+      "description": "Proyecto creado para curso de desarrollo web donde personas se pueden conectar para adoptar mascotas o dar en adopción aquellas que hayan encontrado en la calle. Aclaración: Es solo una maqueta, no es un sitio web activo, ni está totalmente optimizado para mobile.",
+      "imgDesktop": "./media/img/proyectos/adoptaUnFirulais/adoptaUnFirulais-desktop.png",
+      "imgMobile": "./media/img/proyectos/adoptaUnFirulais/adoptaUnFirulais-mobile.png",
+      "githubUrl": "https://github.com/gonzaCebre/firulaisWeb",
+      "projectUrl": "https://gonzacebre.github.io/firulaisWeb"
     },
     {
       "id": 3,
-      "title": "Stay Chill",
-      "description": "3° Proyecto creado para blablablablablablalbalblabalbalbalbalbal",
-      "imgDesktop": "./media/img/fotos/gonza.jpg",
-      "imgMobile": "789",
-      "githubUrl": "github.com",
-      "projectUrl": "ghr.com"
-    },
-    {
-      "id": 4,
-      "title": "Stay Chill",
-      "description": "3° Proyecto creado para blablablablablablalbalblabalbalbalbalbal",
-      "imgDesktop": "./media/img/fotos/gonza.jpg",
-      "imgMobile": "789",
-      "githubUrl": "github.com",
-      "projectUrl": "ghr.com"
-    },
-    {
-      "id": 5,
-      "title": "Stay Chill",
-      "description": "3° Proyecto creado para blablablablablablalbalblabalbalbalbalbal",
-      "imgDesktop": "./media/img/fotos/gonza.jpg",
-      "imgMobile": "789",
-      "githubUrl": "github.com",
-      "projectUrl": "ghr.com"
-    },
-    {
-      "id": 6,
-      "title": "Stay Chill",
-      "description": "3° Proyecto creado para blablablablablablalbalblabalbalbalbalbal",
-      "imgDesktop": "./media/img/fotos/gonza.jpg",
-      "imgMobile": "789",
-      "githubUrl": "github.com",
-      "projectUrl": "ghr.com"
-    },
-    {
-      "id": 7,
-      "title": "Stay Chill",
-      "description": "3° Proyecto creado para blablablablablablalbalblabalbalbalbalbal",
-      "imgDesktop": "./media/img/fotos/gonza.jpg",
-      "imgMobile": "789",
-      "githubUrl": "github.com",
-      "projectUrl": "ghr.com"
-    },
-    {
-      "id": 8,
-      "title": "Stay Chill",
-      "description": "3° Proyecto creado para blablablablablablalbalblabalbalbalbalbal",
-      "imgDesktop": "./media/img/fotos/gonza.jpg",
-      "imgMobile": "789",
-      "githubUrl": "github.com",
-      "projectUrl": "ghr.com"
-    },
-    {
-      "id": 9,
-      "title": "Stay Chill",
-      "description": "3° Proyecto creado para blablablablablablalbalblabalbalbalbalbal",
-      "imgDesktop": "./media/img/fotos/gonza.jpg",
-      "imgMobile": "789",
-      "githubUrl": "github.com",
-      "projectUrl": "ghr.com"
-    },
-    {
-      "id": 10,
-      "title": "Stay Chill",
-      "description": "3° Proyecto creado para blablablablablablalbalblabalbalbalbalbal",
-      "imgDesktop": "./media/img/fotos/gonza.jpg",
-      "imgMobile": "789",
-      "githubUrl": "github.com",
-      "projectUrl": "ghr.com"
-    },
-    {
-      "id": 11,
-      "title": "Stay Chill",
-      "description": "3° Proyecto creado para blablablablablablalbalblabalbalbalbalbal",
-      "imgDesktop": "./media/img/fotos/gonza.jpg",
-      "imgMobile": "789",
-      "githubUrl": "github.com",
-      "projectUrl": "ghr.com"
-    },
-    {
-      "id": 12,
-      "title": "Stay Chill",
-      "description": "3° Proyecto creado para blablablablablablalbalblabalbalbalbalbal",
-      "imgDesktop": "./media/img/fotos/gonza.jpg",
-      "imgMobile": "789",
-      "githubUrl": "github.com",
-      "projectUrl": "ghr.com"
-    },
-    {
-      "id": 13,
-      "title": "Stay Chill",
-      "description": "3° Proyecto creado para blablablablablablalbalblabalbalbalbalbal",
-      "imgDesktop": "./media/img/fotos/gonza.jpg",
-      "imgMobile": "789",
-      "githubUrl": "github.com",
-      "projectUrl": "ghr.com"
-    },
-    {
-      "id": 14,
-      "title": "Stay Chill",
-      "description": "3° Proyecto creado para blablablablablablalbalblabalbalbalbalbal",
-      "imgDesktop": "./media/img/fotos/gonza.jpg",
-      "imgMobile": "789",
-      "githubUrl": "github.com",
-      "projectUrl": "ghr.com"
-    },
-    {
-      "id": 15,
-      "title": "Stay Chill",
-      "description": "3° Proyecto creado para blablablablablablalbalblabalbalbalbalbal",
-      "imgDesktop": "./media/img/fotos/gonza.jpg",
-      "imgMobile": "789",
-      "githubUrl": "github.com",
-      "projectUrl": "ghr.com"
+      "title": "La Gulá",
+      "description": "Proyecto creado para curso de desarrollo web que emula el funcionamiento de un menú digital para ordenar el pedido en un local. Aclaración: Es solo una maqueta, no es un sitio web activo, ni está totalmente optimizado para mobile.",
+      "imgDesktop": "./media/img/proyectos/laGula/laGula-desktop.png",
+      "imgMobile": "./media/img/proyectos/laGula/laGula-mobile.png",
+      "githubUrl": "https://github.com/gonzaCebre/laGula",
+      "projectUrl": "https://gonzacebre.github.io/laGula/"
     }
   ]
