@@ -16,10 +16,10 @@ header {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 0 2rem;
-        
+        padding: 0 2rem;        
 
-        .brand-title {
+        //LOGO
+        .logo-gonza {
             @include text($fredoka, 1.375rem, $dark);
             transition: all 0.3s ease-out;
             
@@ -30,6 +30,7 @@ header {
             }
         }
 
+        //BOTON HAMBURGUESA
         .menu-btn {
             position: relative;
             display: none;
@@ -69,7 +70,9 @@ header {
           .menu-btn__burger::after {
             transform: translateY(10px);
           }
-          /* ANIMATION */
+
+
+          // ANIMACION BOTON HAMBURGUESA
           .menu-btn.open .menu-btn__burger {
             transform: translateX(-50px);
             background: transparent;
@@ -85,6 +88,7 @@ header {
           }
         
 
+        //MENU - LINKS
         .navbar-links {
             height: 100%;
 
@@ -114,7 +118,7 @@ header {
     }
 }
 
-
+//PARA CELU
 @media (max-width: 800px) {
     .navbar {
         flex-direction: column;
@@ -161,6 +165,7 @@ header {
     }
 }
 
+//PARA COMPU
 @media (min-width: 801px) {
     .menu-btn {
         display: none;
@@ -168,11 +173,3 @@ header {
 }
 
 
-@keyframes fade-in-header {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-}

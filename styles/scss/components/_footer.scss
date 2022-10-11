@@ -65,6 +65,11 @@ footer {
 
             .logos-redes {
                 fill: $violet;
+
+                &:first-child{
+                    margin-right: 2rem;
+                }
+
                 
 
                 &:hover {

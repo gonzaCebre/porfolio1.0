@@ -19,7 +19,7 @@
     <!--            HEADER              HEADER          HEADER          HEADER-->
     <header id="header" class="animate__animated ">
         <nav class="navbar">
-            <p href="#index" class="brand-title">GonzaCebre</p>
+            <p href="#index" class="logo-gonza">GonzaCebre</p>
             <div class="menu-btn" id="menuBtn">
                 <div class="menu-btn__burger"></div>
             </div>
@@ -52,9 +52,9 @@
     </a>
 
     <main>
-
         <!--            INDEX              INDEX          INDEX          INDEX-->
         <section class="index animate__animated " id="quienSoy">
+            <!--CABEZA DE ALIEN-->
             <svg viewBox="0 0 893 866" class="alien__head noMostrar" id="alienHead">
                 <path class="st0" d="M788.65,322.86c-17.71-63.38-50.33-118.16-97.95-164.02c-26.99-25.99-56.7-47.87-90.22-64.5
                         C514.33,51.6,424.58,42.98,332.3,69.2c-74.83,21.26-136.85,62.97-185.45,124.11c-54.09,68.04-80.96,145.62-80.26,232.41
@@ -80,6 +80,7 @@
                         c8.17-8.28,12.55-7.03,19.76,1.93c17.5,21.78,32.92,44.82,45.71,69.65C774.4,311.93,789.32,369.37,783.92,431.01z" />
 
             </svg>
+            <!--MANO DERECHA DE ALIEN-->
             <svg viewBox="0 0 1277 1080" class="alien__hand--right  noMostrar" id="alienHandRight">
                 <path d="M1246.33,804.85c1.57-11.61-0.84-22.46-7.18-32.32c-10.39-16.15-25.74-25.94-43.56-31.45
                     c-22.82-7.06-39.61-21.24-53.58-40.05c-38.96-52.48-81.16-102.35-126.38-149.43c-37.15-38.68-66.26-81.7-87.24-131.1
@@ -103,7 +104,7 @@
                     c36.08,39.54,74.13,77.01,115.4,111.08c20.48,16.9,38.48,35.51,50.04,59.82c3.31,6.94,7.71,13.6,12.67,19.49
                     c11.38,13.5,25.93,20.21,43.93,17.21C1238.01,823.55,1244.76,816.42,1246.33,804.85z" />
             </svg>
-
+            <!--CONTENEDOR INDEX-->
             <div class="principal">
 
                 <img src="./media/img/fotos/foto-gonza.png" alt="" class="foto-gonza animate__animated floating" id="fotoGonzaIndex">
@@ -114,7 +115,7 @@
                     <p class="text animate__animated animate__zoomInDown">Transformo ideas en código (y otras cosas)</p>
                 </div>
             </div>
-
+            <!--MANO IZQUIERDA DE ALIEN-->
             <svg viewBox="0 0 1080 1080" class="alien__hand--left  noMostrar" id="alienHandLeft">
                 <path d="M1021.9,458.11c-2.11,11.52-7.77,21.09-16.86,28.49c-14.89,12.13-32.52,16.66-51.17,16.37
                 c-23.88-0.38-44.25,7.89-63.37,21.43c-53.33,37.78-108.94,72.08-166.54,102.79c-47.33,25.23-88.36,57.08-123.64,97.52
@@ -138,9 +139,7 @@
                 c24.71-9.7,47.6-21.8,66.15-41.32c5.3-5.57,11.55-10.53,18.1-14.59c15.01-9.3,30.93-11.16,47.1-2.72
                 C1019.8,437.75,1024,446.62,1021.9,458.11z" />
             </svg>
-
         </section>
-
 
         <!--            QUE HAGO              QUE HAGO          QUE HAGO          QUE HAGO-->
         <section class="que-hago  hidden" id="queHago">
@@ -152,18 +151,16 @@
                 <div class="contenido">
                     <img src="" alt="" class="animacion-servicios  floating" id="animacionServicios">
 
-                    <div class="servicios">
-    
+                    <div class="servicios">    
                         <!--    FRONTEND    -->
-                        <div class="servicios__section">
-    
+                        <div class="servicios__section">    
                             <div class="servicios__section__title" id="frontendTitle">
                                 <h3 id="frontendText">Frontend</h3>
                                 <i class="fa-solid fa-caret-down down-arrow" id="frontendArrow"></i>
                             </div>
-    
+
+                            <!--    TECNOLOGIAS FRONTEND    -->    
                             <div class="tecnologias__section noMostrar" id="frontendContainer">
-    
                                 <div class="tecnologias">
                                     <svg viewBox="0 0 43.28 61.12" class="logos">
                                         <title>HTML 5</title>
@@ -286,8 +283,8 @@
     
                                 </div>
     
-                                <div class="more">
-                                    <p href="" class="abrirModal" id="viewFrontend">Ver proyectos</p>
+                                <div class="mas">
+                                    <p class="abrirModal" id="viewFrontend">Ver proyectos</p>
                                     <i class="fa-solid fa-arrow-right-long arrow-right"></i>
                                 </div>
                             </div>
@@ -301,6 +298,7 @@
                                 <i class="fa-solid fa-caret-down down-arrow" id="backendArrow"></i>
                             </div>
     
+                            <!--    BACKEND TECNOLOGIAS    -->
                             <div class="tecnologias__section noMostrar" id="backendContainer">
     
                                 <div class="tecnologias">
@@ -461,14 +459,14 @@
                                     </svg>
                                 </div>
     
-                                <div class="more">
-                                    <p href="" class="abrirModal" id="viewBackend">Ver proyectos</p>
+                                <div class="mas">
+                                    <p class="abrirModal" id="viewBackend">Ver proyectos</p>
                                     <i class="fa-solid fa-arrow-right-long arrow-right"></i>
                                 </div>
                             </div>
                         </div>
     
-                        <!--    CREATIVE    -->
+                        <!--    CREATIVO    -->
                         <div class="servicios__section">
     
                             <div class="servicios__section__title" id="creativeTitle">
@@ -476,6 +474,7 @@
                                 <i class="fa-solid fa-caret-down down-arrow" id="creativeArrow"></i>
                             </div>
     
+                            <!--    CREATIVO TECNOLOGIAS    -->
                             <div class="tecnologias__section noMostrar" id="creativeContainer">
                                 <div class="tecnologias">
                                     <svg viewBox="0 0 62.78 61.23" class="logos">
@@ -497,7 +496,7 @@
                                             transform="translate(-15.82 -15.99)" />
                                     </svg>
                                 </div>
-                                <div class="more">
+                                <div class="mas">
                                     <p class="abrirModal" id="viewCreative">Ver proyectos</p>
                                     <i class="fa-solid fa-arrow-right-long arrow-right"></i>
                                 </div>
@@ -654,10 +653,7 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
-
             </div>
 
             <p class="cerrar-modal  noMostrar">X</p>
@@ -698,6 +694,7 @@
                         <div class="backend__projects" id="backendProjects">
 
                         </div>
+                        
                         <p class="backend-text">this.proyectos.push();</p>
                         <i class="fa-solid fa-arrow-down down-arrow-white-backend floating" ></i>
                     </div>

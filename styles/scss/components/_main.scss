@@ -5,27 +5,6 @@ section {
     overflow-x: hidden;    
 }
 
-@keyframes floating-section {
-    0% {
-        transform: translateY(0);
-        
-    }
-    25% {
-        transform: translateY(4px);
-        
-    }
-    50% {
-        transform: translateY(0);
-    }
-    75% {
-        transform: translateY(4px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-
 .logos {
     fill: $dark;
     margin-right: 5%;
@@ -39,8 +18,6 @@ section {
         height: 3rem;
     }
 }
-
-
 
 .mostrar {
     display: block;
@@ -83,3 +60,24 @@ section {
 }
 
 
+
+.ovni {
+    fill: $dark;
+    width: 3.125rem;
+
+    position: fixed;
+    z-index: 4;
+    bottom: 50vh;
+    right: 4vw;
+
+    &:hover {
+        cursor: pointer;
+        animation: shake 350ms ease;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .ovni {
+        display: none;
+    }
+}

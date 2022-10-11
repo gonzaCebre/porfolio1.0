@@ -2,11 +2,8 @@
 .que-hago {
     flex-direction: column;
     align-items: flex-start;
-    /* overflow-y: hidden; */
     overflow: hidden;
     width: 100vw;
-
-
 
     &-contenedor {
         width: 100%;
@@ -70,7 +67,7 @@
                             flex-wrap: wrap;
                         }      
                         
-                        .more {
+                        .mas {
                             display: flex;
                             justify-content: flex-end;
                             align-items: center;
@@ -181,8 +178,6 @@
                 }
             }
         }
-
-
     }
 }
 
