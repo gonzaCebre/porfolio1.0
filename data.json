@@ -11,11 +11,11 @@
     {
       "id": 2,
       "title": "Portfolio",
-      "description": "Portfolio personal pensado, diseñado y desarrollado por mi.",
+      "description": "Portfolio personal pensado, diseñado y desarrollado por mi persona.",
       "imgDesktop": "./media/img/proyectos/portfolio/portfolio-desktop.png",
       "imgMobile": "./media/img/proyectos/portfolio/portfolio-mobile.png",
       "githubUrl": "https://github.com/gonzaCebre/",
-      "projectUrl": ""
+      "projectUrl": "https://www.gonzacebre.com.ar"
     },
     {
       "id": 3,

@@ -25,7 +25,7 @@ export default viewFrontend;
 
 import loadData from "../loadData.js";
 
-const loadProjects = async () => {
+const loadFrontendProjects = async () => {
     const data = await loadData();
 
     data.forEach(project => {
@@ -81,7 +81,7 @@ const loadProjects = async () => {
 
 }
 
-loadProjects();
+loadFrontendProjects();
 
 let frontendProjectContainer = document.getElementById('frontendProjectContainer');
 
@@ -90,82 +90,3 @@ let closeProject = document.getElementById('closeProject');
 closeProject.addEventListener('click', () => {
     frontendProjectContainer.classList.add('noMostrar');
 })
-
-/* 
-const carrusel = async () => {
-    const data = await traerProyectos();
-    const imagenes = data.map(proyecto => {
-        return proyecto.imgDesktop;
-    });
-    const imagenesMobile = data.map(proyecto => {
-        return proyecto.imgMobile;
-    });
-    const titles = data.map(proyecto => {
-        return proyecto.title;
-    });
-    const descriptions = data.map(proyecto => {
-        return proyecto.description;
-    });
-    
-    
-    let contador = 0;
-  
-    let adelante = document.getElementById('adelante');
-    let atras = document.getElementById('atras');
-    let desktopImg = document.getElementById('desktopImg'); 
-    let proyectoTitle = document.getElementById('proyectoTitle'); 
-    let proyectoDescription = document.getElementById('proyectoDescription'); 
-
-    desktopImg.setAttribute('href', imagenes[0]);
-    proyectoTitle.textContent = titles[0];
-    proyectoDescription.textContent = descriptions[0];
-    contador = 0;
-    
-    
-    atras.addEventListener('click', () => {
-        if(contador > 0 ) {
-            desktopImg.setAttribute('href', imagenes[contador - 1]);
-            proyectoTitle.textContent = titles[contador - 1];
-            proyectoDescription.textContent = descriptions[contador - 1];
-            contador--;
-        }else {
-            desktopImg.setAttribute('href', imagenes[imagenes.length - 1]);
-            proyectoTitle.textContent = titles[titles.length - 1];
-            proyectoDescription.textContent = descriptions[descriptions.length - 1];
-            contador = imagenes.length - 1;
-        }
-    })
-    
-    adelante.addEventListener('click', () => {
-        if(contador < imagenes.length -1 ) {
-            desktopImg.setAttribute('href', imagenes[contador + 1]);
-            proyectoTitle.textContent = titles[contador + 1];
-            proyectoDescription.textContent = descriptions[contador + 1];
-            contador++;
-        }else {
-            desktopImg.setAttribute('href', imagenes[0]);
-            proyectoTitle.textContent = titles[0];
-            proyectoDescription.textContent = descriptions[0];
-            contador = 0;
-        }
-    })
-}
-
-carrusel();
-
-const frontendModal = document.getElementById('frontendModal');
-
-
-const abrirModal = document.querySelectorAll('.abrirModal');
-const cerrarModal = document.querySelectorAll('.cerrar-modal');
-
-abrirModal.forEach(element => {
-    element.addEventListener('click', ()=> {
-        frontendModal.classList.remove('noMostrar');
-    })
-});
-cerrarModal.forEach(element => {
-    element.addEventListener('click', ()=> {
-        frontendModal.classList.add('noMostrar');
-    })
-}); */

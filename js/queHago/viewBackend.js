@@ -24,7 +24,7 @@ export default viewBackend;
 
 import loadBackendProjects from "../loadBackendProjects.js";
 
-const loadProjects = async () => {
+const loadBackendProjects = async () => {
     const data = await loadBackendProjects();
 
     data.forEach(project => {
@@ -179,4 +179,4 @@ const loadProjects = async () => {
 
 }
 
-loadProjects();
+loadBackendProjects();

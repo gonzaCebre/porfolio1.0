@@ -24,7 +24,7 @@ export default viewCreative;
 
 import loadCreativeProjects from "../loadCreativeProjects.js";
 
-const loadProjects = async () => {
+const loadCreativeProjects = async () => {
     const data = await loadCreativeProjects();
 
     data.forEach(project => {
@@ -74,7 +74,7 @@ const loadProjects = async () => {
 
 }
 
-loadProjects();
+loadCreativeProjects();
 
 let creativeProjectContainer = document.getElementById('creativeProjectContainer');
 
