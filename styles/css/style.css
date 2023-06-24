@@ -511,27 +511,6 @@ footer {
   justify-content: center;
   position: relative;
   height: 90vh; }
-  .index .alien, .index .alien__head, .index .alien__hand--right, .index .alien__hand--left {
-    fill: #83e18c;
-    stroke: #161616;
-    stroke-width: 1.1rem;
-    stroke-miterlimit: 10;
-    position: absolute; }
-    .index .alien__head {
-      width: 10.5rem;
-      left: 2%;
-      top: 15%;
-      animation: fade-in-alien 700ms forwards ease-out; }
-    .index .alien__hand--right {
-      width: 10.5rem;
-      z-index: 10;
-      top: -1rem;
-      right: 20%; }
-    .index .alien__hand--left {
-      left: 30%;
-      bottom: -2.2rem;
-      width: 10.5rem;
-      z-index: 10; }
   .index .principal {
     width: 75%;
     height: 80%;
@@ -1200,7 +1179,7 @@ footer {
 
 @keyframes fade-in-alien {
   0% {
-    left: 10%;
+    left: -10%;
     /* transform: rotate(5deg); */ }
   100% { } }
 
@@ -1263,4 +1242,12 @@ html {
   overflow-x: hidden; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  position: relative; }
+
+.alien-nuevo {
+  position: absolute;
+  width: 150px;
+  top: 200px;
+  left: 0;
+  animation: fade-in-alien 700ms forwards ease-out; }

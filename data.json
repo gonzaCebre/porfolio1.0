@@ -1,30 +1,38 @@
 [
-    {
-      "id": 1,
-      "title": "GHR Abogados",
-      "description": "Proyecto creado para presentación de servicios y medio de contacto con estudio jurídico situado en Bs. As., Argentina.",
-      "imgDesktop": "./media/img/proyectos/ghrAbogados/ghrAbogados-desktop.png",
-      "imgMobile": "./media/img/proyectos/ghrAbogados/ghrAbogados-mobile.png",
-      "githubUrl": "https://github.com/gonzaCebre/ghr",
-      "projectUrl": "https://ghrabogados.com.ar/"
-    },
-    {
-      "id": 2,
-      "title": "Portfolio",
-      "description": "Portfolio personal pensado, diseñado y desarrollado por mi.",
-      "imgDesktop": "./media/img/proyectos/portfolio/portfolio-desktop.png",
-      "imgMobile": "./media/img/proyectos/portfolio/portfolio-mobile.png",
-      "githubUrl": "https://github.com/gonzaCebre/",
-      "projectUrl": "https://www.gonzacebre.com.ar"
-    },
-    {
-      "id": 3,
-      "title": "Not Basic Nails",
-      "description": "Proyecto creado para emprendimiento de salón de uñas.",
-      "imgDesktop": "./media/img/proyectos/notBasic/notBasic-desktop.png",
-      "imgMobile": "./media/img/proyectos/notBasic/notBasic-mobile.png",
-      "githubUrl": "https://github.com/gonzaCebre/notbasicnails",
-      "projectUrl": "https://gonzacebre.github.io/notbasicnails/"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "title": "GHR Abogados",
+    "description": "Proyecto creado para presentación de servicios y medio de contacto con estudio jurídico situado en Bs. As., Argentina.",
+    "imgDesktop": "./media/img/proyectos/ghrAbogados/ghrAbogados-desktop.png",
+    "imgMobile": "./media/img/proyectos/ghrAbogados/ghrAbogados-mobile.png",
+    "githubUrl": "https://github.com/gonzaCebre/ghr",
+    "projectUrl": "https://ghrabogados.com.ar/"
+  },
+  {
+    "id": 2,
+    "title": "Portfolio",
+    "description": "Portfolio personal pensado, diseñado y desarrollado por mi.",
+    "imgDesktop": "./media/img/proyectos/portfolio/portfolio-desktop.png",
+    "imgMobile": "./media/img/proyectos/portfolio/portfolio-mobile.png",
+    "githubUrl": "https://github.com/gonzaCebre/",
+    "projectUrl": "https://www.gonzacebre.com.ar"
+  },
+  {
+    "id": 3,
+    "title": "Not Basic Nails",
+    "description": "Proyecto creado para emprendimiento de salón de uñas.",
+    "imgDesktop": "./media/img/proyectos/notBasic/notBasic-desktop.png",
+    "imgMobile": "./media/img/proyectos/notBasic/notBasic-mobile.png",
+    "githubUrl": "https://github.com/gonzaCebre/notbasicnails",
+    "projectUrl": "https://gonzacebre.github.io/notbasicnails/"
+  },
+  {
+    "id": 4,
+    "title": "Nico Martinez",
+    "description": "Portfolio web creado para actor.",
+    "imgDesktop": "./media/img/proyectos/nicoMartinez/nicoMartinez-desktop.png",
+    "imgMobile": "./media/img/proyectos/nicoMartinez/nicoMartinez-mobile.jpg",
+    "githubUrl": "https://github.com/gonzaCebre/nicoMartinez",
+    "projectUrl": "https://elnicomartinez.com.ar"
+  }
+]

@@ -27,6 +27,16 @@ html {
 
 body {
     overflow-x: hidden;
+    position: relative;
+}
+
+.alien-nuevo{
+    position: absolute;
+    width: 150px;
+    top: 200px;
+    left: 0;
+    animation: fade-in-alien 700ms forwards ease-out;
+    
 }
 
 

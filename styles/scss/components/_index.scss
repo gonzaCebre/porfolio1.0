@@ -6,43 +6,7 @@
     position: relative;
     height: 90vh;
 
-    //ALIEN QUE SE ASOMA
-    .alien {
-        fill: $green;
-        stroke: $dark; 
-        stroke-width:1.1rem;
-        stroke-miterlimit:10;
-        position: absolute;
-        
-    
-        &__head {
-            @extend .alien;
-            width:  10.5rem;
-            left: 2%;
-            top: 15%; 
-            animation: fade-in-alien 700ms forwards ease-out;
-        }
-    
-        &__hand--right {
-            @extend .alien;
-            width: 10.5rem;
-            z-index: 10;
-            top: -1rem;
-            right: 20%;
-        }
-    
-        &__hand--left {
-            @extend .alien; 
-            left: 30%;
-            bottom: -2.2rem; 
-            width:  10.5rem;
-            z-index: 10;
-            
-        }
-    
-    }
-    
-
+     
     .principal {
         width: 75%;
         height: 80%;
@@ -211,7 +175,6 @@
         }
     }
 }
-
 
 
 
