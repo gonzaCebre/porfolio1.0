@@ -1,12 +1,12 @@
 [
   {
-    "id": 1,
-    "title": "GHR Abogados",
-    "description": "Proyecto creado para presentación de servicios y medio de contacto con estudio jurídico situado en Bs. As., Argentina.",
-    "imgDesktop": "./media/img/proyectos/ghrAbogados/ghrAbogados-desktop.png",
-    "imgMobile": "./media/img/proyectos/ghrAbogados/ghrAbogados-mobile.png",
-    "githubUrl": "https://github.com/gonzaCebre/ghr",
-    "projectUrl": "https://ghrabogados.com.ar/"
+    "id": 1,    
+    "title": "Stay Chill",
+    "description": "Ecommerce - Proyecto fullstack MERN",
+    "imgDesktop": "./media/img/proyectos/stayChill/staychill-desktop.png",
+    "imgMobile": "./media/img/proyectos/stayChill/staychill-mobile.png",
+    "githubUrl": "https://github.com/gonzaCebre/ecommerce",
+    "projectUrl": "https://frontend-delta-rouge-29.vercel.app/"
   },
   {
     "id": 2,
@@ -34,5 +34,14 @@
     "imgMobile": "./media/img/proyectos/nicoMartinez/nicoMartinez-mobile.jpg",
     "githubUrl": "https://github.com/gonzaCebre/nicoMartinez",
     "projectUrl": "https://elnicomartinez.ar"
+  },
+  {
+    "id": 5,
+    "title": "GHR Abogados",
+    "description": "Proyecto creado para presentación de servicios y medio de contacto con estudio jurídico situado en Bs. As., Argentina.",
+    "imgDesktop": "./media/img/proyectos/ghrAbogados/ghrAbogados-desktop.png",
+    "imgMobile": "./media/img/proyectos/ghrAbogados/ghrAbogados-mobile.png",
+    "githubUrl": "https://github.com/gonzaCebre/ghr",
+    "projectUrl": "https://ghrabogados.com.ar/"
   }
 ]
